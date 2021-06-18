@@ -17,10 +17,11 @@
                     Effectuer une opération de depot d'argent selon le montant voulu.
                 </p>
             </div>
-            <form class="form-container">
+            <form class="form-container" action="/depot" method="post">
                 <div class="form-group">
-                    <input class="form-control form-control-lg ui-input" type="text" placeholder="N°">
-                    <input class="form-control form-control-lg ui-input" type="number" placeholder="Montant">
+                    <input class="form-control form-control-lg ui-input" type="text" placeholder="N°" required>
+                    <input class="form-control form-control-lg ui-input" aria-describedby="inputGroupPrepend"
+                    required type="number" placeholder="Montant">
                     <select class="form-control form-control-lg ui-input">
                         <option>USD</option>
                         <option>FC</option>

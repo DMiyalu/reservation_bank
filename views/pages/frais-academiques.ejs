@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <%- include('../layouts/head'); %>
+</head>
+<body>
+
+<header>
+    <%- include('../layouts/header'); %>
+</header>
+
+<main>
+        <div class="main-form-container">
+            <div class="head-form-container">
+                <h1>RETRAIT</h1>
+                <p class="head-content">
+                    Une somme de frais academiques est demandée à l'utilisateur pour la validité de l'opération.
+                </p>
+            </div>
+            <form class="form-container">
+                <div class="form-group">
+                    
+                    <input class="form-control form-control-lg ui-input" type="text" placeholder="Nom" required>
+                    <input
+                     class="form-control form-control-lg ui-input" type="text" placeholder="Post-Nom" required>
+                     <input
+                     class="form-control form-control-lg ui-input" type="text" placeholder="Pre-Nom" required>
+                     <select class="form-control form-control-lg ui-input">
+                        <option>Sciences/Math-Info</option>
+                        <option>Sciences/Géologie</option>
+                        <option>Sciences/Physique</option>
+                        <option>Droit/Droit pénal</option>
+                        <option>Droit/Droit civil</option>
+                        <option>Economie/Economie rurale</option>
+                        <option>Economie/Economie mathématique</option>
+                    </select>
+                    <select class="form-control form-control-lg ui-input">
+                        <option>G1</option>
+                        <option>G2</option>
+                        <option>G3</option>
+                        <option>L1</option>
+                        <option>L2</option>
+                    </select>
+                    <input class="form-control form-control-lg ui-input" aria-describedby="inputGroupPrepend"
+                    required type="number" placeholder="Montant">
+                    <select class="form-control form-control-lg ui-input">
+                        <option>USD</option>
+                        <option>FC</option>
+                    </select>
+                </div>
+                <button action="/frais-academiques" method="post" type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+        </div>
+</main>
+    
+<footer>
+    <%- include('../layouts/footer'); %>
+</footer>
+    
+</body>
+</html>
+

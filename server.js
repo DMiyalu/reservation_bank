@@ -6,6 +6,7 @@ app.set('view engine', 'ejs');
 
 // some config
 app.use(express.static('assets'));
+app.use(express.urlencoded())
 
 // use res.render to load up an ejs view file
 
@@ -14,8 +15,16 @@ app.get('/', function(request, response) {
     response.render('pages/index');
 });
 
-app.get('/contact', function(request, response) {
-    response.render('pages/contact');
+app.get('/depot', function(request, response) {
+    response.render('pages/depot');
+});
+
+app.get('/retrait', function(request, response) {
+    response.render('pages/retrait');
+});
+
+app.get('/frais-academiques', function(request, response) {
+    response.render('pages/frais-academiques');
 });
 
 app.listen(8080);
